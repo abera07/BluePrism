@@ -1,0 +1,61 @@
+﻿<process name="Lab2_v1" version="1.0" bpversion="7.0.0.40580" narrative="Find largest in 2 numbers." byrefcollection="true" preferredid="6c4e438b-9640-47d3-8b7b-dabb96963219">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="aab04f02-284e-47a6-ad33-59b2716ef11f" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>f1f6f862-3c4d-482e-8c05-2e89effaccc7</onsuccess>
+  </stage>
+  <stage stageid="04c2a923-6b06-4deb-aece-cf8ddef319c1" name="End" type="End">
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="ea388b7b-6958-452b-b676-195018f12833" name="Stage1" type="ProcessInfo">
+    <display x="-330" y="-120" w="150" h="90" />
+  </stage>
+  <stage stageid="21dc1dda-7067-4819-a275-46939e61f51b" name="A" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="150" y="-105" />
+    <datatype>number</datatype>
+    <initialvalue>55</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="6f7b9706-28c5-4384-9c03-29089c057312" name="B" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="255" y="-105" />
+    <datatype>number</datatype>
+    <initialvalue>49</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="a6e195eb-23b4-4a87-9fd9-874b68305b11" name="Result" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="255" y="-30" w="90" h="90" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">Currently searching,,,</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="f1f6f862-3c4d-482e-8c05-2e89effaccc7" name="A&gt;B?" type="Decision">
+    <display x="15" y="-15" w="90" h="60" />
+    <decision expression="[A] &gt; [B]" />
+    <ontrue>ac4c5745-01f9-4501-b94d-3f002e6d9766</ontrue>
+    <onfalse>c0375c14-e2ed-43dd-b5e3-c69d57a22ad8</onfalse>
+  </stage>
+  <stage stageid="ac4c5745-01f9-4501-b94d-3f002e6d9766" name="A is greater" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="-90" y="15" />
+    <onsuccess>04c2a923-6b06-4deb-aece-cf8ddef319c1</onsuccess>
+    <calculation expression="&quot;A is greater.&quot;" stage="Result" />
+  </stage>
+  <stage stageid="c0375c14-e2ed-43dd-b5e3-c69d57a22ad8" name="B is greater" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="120" y="15" />
+    <onsuccess>04c2a923-6b06-4deb-aece-cf8ddef319c1</onsuccess>
+    <calculation expression="&quot;B is greater.&quot;" stage="Result" />
+  </stage>
+</process>

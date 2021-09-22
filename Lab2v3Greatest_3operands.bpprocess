@@ -1,0 +1,87 @@
+﻿<process name="Lab2v3" version="1.0" bpversion="7.0.0.40580" narrative="3 operands" byrefcollection="true" preferredid="e6125006-56ea-4a93-a355-115ef5702816">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="4862c7ac-55c3-4fb1-ab3e-e46ed0ab0882" name="Start" type="Start">
+    <display x="15" y="-135" />
+    <onsuccess>5d4f5fe5-d9ff-48a0-a8e8-efed6dd5e725</onsuccess>
+  </stage>
+  <stage stageid="8588af54-fc58-4a94-b5f9-8b96a6d5be1d" name="End" type="End">
+    <display x="15" y="135" />
+  </stage>
+  <stage stageid="f5b5fbd3-7dce-4093-ad39-3f4de29ff645" name="Stage1" type="ProcessInfo">
+    <display x="-300" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="d1658e93-3014-4244-aaf3-4b97f1051a1b" name="A" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="135" y="-120" />
+    <datatype>number</datatype>
+    <initialvalue>44</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="c7603afd-efc3-47f3-8735-b51b154b4aa0" name="B" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="225" y="-120" />
+    <datatype>number</datatype>
+    <initialvalue>167</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="6d1d603a-7042-41af-8cfc-185cf776dd35" name="C" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="315" y="-120" />
+    <datatype>number</datatype>
+    <initialvalue>91</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="bb5241b6-a272-4004-8a1d-ea9509390e9e" name="Result" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="330" y="0" w="90" h="60" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">Currently searching..</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="5d4f5fe5-d9ff-48a0-a8e8-efed6dd5e725" name="A&gt;B?" type="Decision">
+    <display x="15" y="-60" />
+    <decision expression="[A] &gt; [B]" />
+    <ontrue>9b892d10-a747-41d4-a7d7-8e2dba8c66af</ontrue>
+    <onfalse>9f6b842a-e726-4294-9728-86fdb80f7160</onfalse>
+  </stage>
+  <stage stageid="9b892d10-a747-41d4-a7d7-8e2dba8c66af" name="A&lt;C?" type="Decision">
+    <display x="-75" y="-15" />
+    <decision expression="[A]&gt;[C]" />
+    <ontrue>1539744f-c8f0-43d9-88ac-8ca08855f0e2</ontrue>
+    <onfalse>ab704e4e-f70c-4800-9456-21ddde2ccfa8</onfalse>
+  </stage>
+  <stage stageid="9f6b842a-e726-4294-9728-86fdb80f7160" name="B&gt;C?" type="Decision">
+    <display x="90" y="-15" />
+    <decision expression="[B]&gt;[C]" />
+    <ontrue>27921739-2d7e-48a8-95b6-ccf7f7bd8ab8</ontrue>
+    <onfalse>ab704e4e-f70c-4800-9456-21ddde2ccfa8</onfalse>
+  </stage>
+  <stage stageid="1539744f-c8f0-43d9-88ac-8ca08855f0e2" name="A is greater" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="-165" y="45" />
+    <onsuccess>8588af54-fc58-4a94-b5f9-8b96a6d5be1d</onsuccess>
+    <calculation expression="[A]&amp;&quot; is the largest number.&quot;" stage="Result" />
+  </stage>
+  <stage stageid="27921739-2d7e-48a8-95b6-ccf7f7bd8ab8" name="B is greater" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="195" y="45" />
+    <onsuccess>8588af54-fc58-4a94-b5f9-8b96a6d5be1d</onsuccess>
+    <calculation expression="[B]&amp;&quot; is the largest number.&quot;&#xA;" stage="Result" />
+  </stage>
+  <stage stageid="ab704e4e-f70c-4800-9456-21ddde2ccfa8" name="C is greater" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="30" />
+    <onsuccess>8588af54-fc58-4a94-b5f9-8b96a6d5be1d</onsuccess>
+    <calculation expression="[C]&amp;&quot; is the largest number.&quot;&#xA;" stage="Result" />
+  </stage>
+</process>
