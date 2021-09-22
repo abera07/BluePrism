@@ -1,4 +1,4 @@
-## BluePrism Training and Project 
+# Blue Prism Training and Project 
 
 ![Image_BP](https://www.blueprism.com/uploads/logos/blue-blue_prism_logo_2020-10-29-131445.png)
 
