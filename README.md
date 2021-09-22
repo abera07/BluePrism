@@ -1,6 +1,6 @@
 ## BluePrism Training and Project 
 
-![Image_BP](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu0zpywNkWcqNmH7S3mfbgDfaPR1QQZONI2TdGpZVPCugVFPrICWH2DPA6yckr3SW5-A&usqp=CAU)
+![Image_BP](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu0zpywNkWcqNmH7S3mfbgDfaPR1QQZONI2TdGpZVPCugVFPrICWH2DPA6yckr3SW5-A&usqp=CAU?style=centerme))
 
 Blue Prism is the trading name of the Blue Prism Group, a UK multinational software corporation that pioneered and makes enterprise *robotic process automation (RPA)* software that provides a digital workforce designed to automate complex, end-to-end operational activities. (source:Wikipedia)
 
