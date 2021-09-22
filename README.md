@@ -1,4 +1,7 @@
-## BluePrism 
+## BluePrism Training and Project 
+
+![Image_BP](https://www.temenos.com/wp-content/uploads/2019/10/blue-prism-logo-landscape-image-oct-09.jpg)
+
 Blue Prism is the trading name of the Blue Prism Group, a UK multinational software corporation that pioneered and makes enterprise *robotic process automation (RPA)* software that provides a digital workforce designed to automate complex, end-to-end operational activities. (source:Wikipedia)
 
 Robotic process automation (RPA) allows using software robots instead of people to drive the business. It is used to automate regular tasks so the user can concentrate on accomplishing complex tasks rather than routine work manually. This would in turn reduce the human errors. (source:Tutorialspoint)
