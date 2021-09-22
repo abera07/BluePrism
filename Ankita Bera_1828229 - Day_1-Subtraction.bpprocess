@@ -1,0 +1,50 @@
+﻿<process name="Day_1" version="1.0" bpversion="7.0.0.40580" narrative="21/09&#xD;&#xA;" byrefcollection="true" preferredid="73a9aea5-572d-4bb4-8550-809a70b7a759">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="3d0b0896-ea9a-4186-b03e-b52f5004a382" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>439b33ad-1ada-4c09-8465-93001e5118cd</onsuccess>
+  </stage>
+  <stage stageid="d86ab47e-c5e3-4b7d-9dcb-cf10b4e177c4" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="691a8f3f-9519-4afb-b303-b55de22ab265" name="A" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="135" y="-120" />
+    <datatype>number</datatype>
+    <initialvalue>10</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="101aacdb-5ea6-4821-bc18-6e7ec327793d" name="B" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="270" y="-75" />
+    <datatype>number</datatype>
+    <initialvalue>20</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="f041a4ba-21eb-429f-9b8c-fc7cc45487d4" name="Result" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="150" y="0" />
+    <datatype>number</datatype>
+    <initialvalue>0</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="64cfc541-c0e9-4163-beaf-a13e4ca12f01" name="End1" type="End">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="439b33ad-1ada-4c09-8465-93001e5118cd" name="Division" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-15" />
+    <onsuccess>64cfc541-c0e9-4163-beaf-a13e4ca12f01</onsuccess>
+    <calculation expression="[A]/[B]" stage="Result" />
+  </stage>
+</process>
