@@ -16,3 +16,7 @@ This repository contains the training assignments and classwork, under the super
 
 **Decision making** with two and three operands.
 **Concatenation** with operands and text.
+
+### Day 3:
+
+**Multiple calculation** performed by taking average of the 3 subjects.
