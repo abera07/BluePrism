@@ -1,0 +1,84 @@
+﻿<process name="Lab5v1" version="1.0" bpversion="7.0.0.40580" narrative="Even/Odd numbers" byrefcollection="true" preferredid="8ced4e76-c9c1-41d0-8591-c48d4c178db2">
+  <view>
+    <camerax>102</camerax>
+    <cameray>-63</cameray>
+    <zoom version="2">1.875</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="69de6fba-a90a-4c55-a621-78752754e77e" name="Start" type="Start">
+    <display x="-45" y="-195" />
+    <onsuccess>d6246098-419a-4664-81e0-204e494c5f26</onsuccess>
+  </stage>
+  <stage stageid="517931fd-fce9-4c72-962d-47a65ea8de7e" name="End" type="End">
+    <display x="-45" y="75" />
+  </stage>
+  <stage stageid="8407be5a-7042-4dfb-bc08-4da283316412" name="Stage1" type="ProcessInfo">
+    <display x="-570" y="-210" w="150" h="90" />
+  </stage>
+  <stage stageid="3d940051-86cd-4a59-900a-57f845d41473" name="Num" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="270" y="-180" />
+    <datatype>number</datatype>
+    <initialvalue>6</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="399ffeee-6f4f-477a-850e-32eae34db363" name="Result" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="435" y="-180" w="120" h="90" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">Currently determining...</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="d6246098-419a-4664-81e0-204e494c5f26" name="SUB" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="-45" y="-135" />
+    <onsuccess>64f343de-7763-422b-bbfb-0d0f662affa6</onsuccess>
+    <calculation expression="[Num] - 2" stage="Num" />
+  </stage>
+  <stage stageid="64f343de-7763-422b-bbfb-0d0f662affa6" name="Even/Odd" type="ChoiceStart">
+    <display x="-45" y="-75" />
+    <groupid>25b9b55e-042b-439e-9a5a-0fda82739911</groupid>
+    <choices>
+      <choice expression="[Num]=0 OR [Num]=-2">
+        <name>"Even"</name>
+        <distance>25</distance>
+        <ontrue>dc346ae7-621d-4bb8-ba3a-b68fb932e561</ontrue>
+      </choice>
+      <choice expression="[Num]=1 OR [Num]=-1">
+        <name>"Odd"</name>
+        <distance>50</distance>
+        <ontrue>f08c19a3-2cf3-4fe0-bc32-c728dfebc5e4</ontrue>
+      </choice>
+    </choices>
+  </stage>
+  <stage stageid="48bbf2ed-f2df-480a-9fa4-284d09bfcf48" name="Otherwise1" type="ChoiceEnd">
+    <display x="-45" y="0" />
+    <onsuccess>c928a0de-14f0-43dd-8083-547678b787af</onsuccess>
+    <groupid>25b9b55e-042b-439e-9a5a-0fda82739911</groupid>
+  </stage>
+  <stage stageid="dc346ae7-621d-4bb8-ba3a-b68fb932e561" name="generator" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="90" y="-60" />
+    <onsuccess>004e4076-c7d8-4962-9a69-f3643f2f499f</onsuccess>
+    <calculation expression="&quot;It is an even number.&quot;" stage="Result" />
+  </stage>
+  <stage stageid="f08c19a3-2cf3-4fe0-bc32-c728dfebc5e4" name="generator" type="Calculation">
+    <loginhibit onsuccess="true" />
+    <display x="90" y="-15" />
+    <onsuccess>004e4076-c7d8-4962-9a69-f3643f2f499f</onsuccess>
+    <calculation expression="&quot;It is an odd number.&quot;" stage="Result" />
+  </stage>
+  <stage stageid="c928a0de-14f0-43dd-8083-547678b787af" name="Anchor1" type="Anchor">
+    <loginhibit onsuccess="true" />
+    <display x="-225" y="-75" w="10" h="10" />
+    <onsuccess>d6246098-419a-4664-81e0-204e494c5f26</onsuccess>
+  </stage>
+  <stage stageid="004e4076-c7d8-4962-9a69-f3643f2f499f" name="Anchor2" type="Anchor">
+    <loginhibit onsuccess="true" />
+    <display x="180" y="30" w="10" h="10" />
+    <onsuccess>517931fd-fce9-4c72-962d-47a65ea8de7e</onsuccess>
+  </stage>
+</process>
