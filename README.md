@@ -20,3 +20,11 @@ This repository contains the training assignments and classwork, under the super
 ### Day 3:
 
 **Multiple calculation** performed by taking average of the 3 subjects.
+
+### Day 4:
+
+**Choice [Switch Case]:**  We calculated the total marks and assigned a grade based on the percentage.
+
+### Day 5:
+
+**Anchor, and Modulus concept:**  We saw the usage of anchors and we performed the moduluo(2) by subtracting the number by 2 until it is 0,1,-1 or -2. 
